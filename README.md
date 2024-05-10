@@ -2,7 +2,7 @@
 
 the ideas is to create Jenkins Master on Azure VM with Terraform.
 <br>
-this will make Jenkins Deployment easy to do, just do a command with terraform apply and a VM will launched and configure itself for running Jenkins inside. im using 2 resource here, both of them is Azure VM and blob storage for storing jenkins artifacts whenever Jenkins Server is **destroy**.
+this will make Jenkins Deployment easy to do, just do a command with terraform apply and a VM will launched and bootsraping jenkins installation. i'm using separated resource file to make it easy to manage and maintain resource.
 
 <br>i will test it to create 3 jenkins jobs :
 - jobs 1 : watch github repository master branch, fetch from master branch and deploy on a Docker Container
