@@ -1,8 +1,9 @@
-# Automate Jenkins Server on Azure VM with Terraform
+# Terraforming Jenkins Server on Azure VM
 
-the ideas is to create Jenkins Master on Azure VM with Terraform.
-<br>
-this will make Jenkins Deployment easy to do, just do a command with terraform apply and a VM will launched and bootsraping jenkins installation. i'm using separated resource file to make it easy to manage and maintain resource.
+This project centers on deploying a Jenkins server on an Azure virtual machine using Terraform, an infrastructure as code tool. By leveraging Terraform's capabilities, users can automate the setup process, ensuring consistency and reliability across deployments. Azure VMs provide a flexible and scalable environment for hosting Jenkins, allowing for seamless integration with CI/CD pipelines and other DevOps workflows.
+
+Before you start<br>
+make sure to install terraform on your machine, and clone this repository.
 
 <br>i will test it to create 3 jenkins jobs :
 - jobs 1 : watch github repository master branch, fetch from master branch and deploy on a Docker Container
